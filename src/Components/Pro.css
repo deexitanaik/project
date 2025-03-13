@@ -3,12 +3,19 @@
     border: 1px solid black;
 }
 
+
+
 .banner {
     display: flex;
     flex-direction: column;
     background-color: white;
     border: 1px solid black;
     margin: auto;
+    transition: transform .7s;
+    overflow: hidden;
+}
+.banner:hover{
+    transform: scale(1.1); 
 }
 
 .img img {
@@ -96,14 +103,14 @@
 }
 
 /* Scroll Indicator (Line Below) */
-.scroll-indicator {
+/* .scroll-indicator {
     position: absolute;
     bottom: -5px;
     height: 3px;
     background-color: red;
     transition: 0.3s ease-in-out;
     border-radius: 5px;
-}
+} */
 
 
 
