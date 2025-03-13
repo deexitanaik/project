@@ -1,0 +1,114 @@
+ /* Keeping your original styles unchanged */
+.container {
+    border: 1px solid black;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.img img {
+    height: 200px;  /* Keeping your original height */
+    width: 100%;    /* Keeping your original width */
+    object-fit: cover;
+}
+
+.hname {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.mini {
+    margin-left: 20px;
+    margin-top: 10px;
+    color: gray;
+}
+
+/* New Category Section */
+.category-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Sticky "All" Button */
+.sticky {
+    position: sticky;
+    left: 0;
+    z-index: 20;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Scrollable Categories */
+.scroll-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-left: 5px;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+/* Category Buttons */
+.category {
+    padding: 10px 18px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    background-color: white;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+/* Active & Hover state */
+.category.active,
+.category:hover {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+/* Scroll Indicator (Line Below) */
+.scroll-indicator {
+    position: absolute;
+    bottom: -5px;
+    height: 3px;
+    background-color: red;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
